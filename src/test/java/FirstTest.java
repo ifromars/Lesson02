@@ -15,6 +15,7 @@ public class FirstTest {
 
     @Before
     public void setUp() throws Exception{
+        //Использовал Capabilities вместо DesiredCapabilities
         Capabilities options = new BaseOptions()
                 .amend("platformName", "Android")
                 .amend("appium:deviceName", "emulator-5554")
@@ -27,6 +28,7 @@ public class FirstTest {
                 new URI("http://localhost:4723/").toURL(),
                 options
         );
+        
     }
 
     @After
